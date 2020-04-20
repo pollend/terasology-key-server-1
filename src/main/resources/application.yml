@@ -1,0 +1,16 @@
+cassandra:
+  default:
+    advanced:
+      metadata:
+        schema:
+          enabled: false
+    basic:
+      contact-points:
+        - "db:9042"
+      load-balancing-policy:
+        local-datacenter: datacenter1
+micronaut:
+  application:
+    name: cassandra-sample
+  server:
+    port: 8080
